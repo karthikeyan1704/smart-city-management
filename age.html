@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<body>
+<script type="text/javascript">
+function submitBirthday()
+               
+ {
+	alert("Calculate you Age");
+    var minutes = 1000 * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+
+    var birthday = Date.parse(document.getElementById("myBirthday").value);
+    var dateNow = new Date();
+    var YearsOld = Math.round((dateNow-birthday)/ years);
+
+    document.getElementById("displayBirthday").innerHTML = (YearsOld);
+}
+</script>
+<input type="date" id="myBirthday" value="dd-mm-yyyy">
+<button onclick="submitBirthday();">Submit</button>
+<hr>
+<div id="displayBirthday"></div>
+
+</body>
+</html>

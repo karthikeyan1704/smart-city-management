@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+            function hello() {
+               alert("Counting!");
+            }
+
+            var countClicks = 0;
+
+            function upCount() { 
+
+                if(document.getElementById('hello').onclick = "hello()") {
+                    countClicks++;
+                    alert(countClicks);
+                    return true;
+                } else {
+                    return false;
+                }
+
+            }
+
+        </script>
+
+        <p><input type="button" name="button" value="Click" id="count" onclick="hello();"/></p>
+
+        <p><input type="button" name="click" value="Count" id="click" onclick="upCount();"/></p>
+
+    </body>
+
+</html>
